@@ -1,0 +1,12 @@
+services:
+  walimatussaraf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "21000:21000"
+    environment:
+      - NODE_ENV=production
+      - PORT=21000
+      - HOSTNAME=0.0.0.0
+    restart: unless-stopped
