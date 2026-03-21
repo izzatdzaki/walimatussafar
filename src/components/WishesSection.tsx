@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { INITIAL_WISHES } from '@/lib/constants';
 import { WishItem } from '@/lib/types';
 import IslamicOrnament from './IslamicOrnament';
 import ScrollAnimator from './ScrollAnimator';
@@ -9,17 +8,16 @@ import ScrollAnimator from './ScrollAnimator';
 const STORAGE_KEY = 'walimatussafar-wishes';
 
 function loadWishes(): WishItem[] {
-  if (typeof window === 'undefined') return INITIAL_WISHES;
+  if (typeof window === 'undefined') return [];
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
-      const parsed = JSON.parse(stored) as WishItem[];
-      return parsed.length > 0 ? parsed : INITIAL_WISHES;
+      return JSON.parse(stored) as WishItem[];
     }
   } catch {
     // localStorage not available or corrupted
   }
-  return INITIAL_WISHES;
+  return [];
 }
 
 function saveWishes(wishes: WishItem[]) {
@@ -31,7 +29,7 @@ function saveWishes(wishes: WishItem[]) {
 }
 
 export default function WishesSection() {
-  const [wishes, setWishes] = useState<WishItem[]>(INITIAL_WISHES);
+  const [wishes, setWishes] = useState<WishItem[]>([]);
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);

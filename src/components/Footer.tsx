@@ -14,7 +14,7 @@ export default function Footer() {
 
       {/* Floating Kaaba ornament */}
       <div className="absolute top-20 right-6 opacity-10 animate-float pointer-events-none">
-        <IslamicOrnament variant="kaaba" color="var(--gold-dark)" className="w-14 h-14" />
+        <IslamicOrnament variant="kaaba" className="w-14 h-14" />
       </div>
 
       <div className="relative z-10 max-w-lg mx-auto">
@@ -47,7 +47,7 @@ export default function Footer() {
         </ScrollAnimator>
 
         <ScrollAnimator delay={400} variant="scale">
-          <IslamicOrnament variant="kaaba" color="var(--gold)" className="mx-auto mt-10 w-12 h-12" />
+          <IslamicOrnament variant="kaaba" className="mx-auto mt-10 w-12 h-12" />
             <a 
             href="https://www.instagram.com/inviteya.dig/" 
             target="_blank" 

@@ -84,7 +84,7 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         <ScrollAnimator delay={400} variant="scale">
           {/* Kaaba SVG centerpiece */}
           <div className="flex justify-center my-6">
-            <IslamicOrnament variant="kaaba" color="var(--gold-dark)" className="w-20 h-20 md:w-24 md:h-24" />
+            <IslamicOrnament variant="kaaba" className="w-20 h-20 md:w-24 md:h-24" />
           </div>
         </ScrollAnimator>
 

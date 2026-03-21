@@ -76,21 +76,21 @@ export default function IslamicOrnament({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Kaaba body */}
-        <rect x="15" y="20" width="50" height="50" rx="2" fill={color} opacity="0.8" />
+        {/* Kaaba body - black kiswah */}
+        <rect x="15" y="20" width="50" height="50" rx="2" fill="#1a1a1a" />
         {/* Kiswah gold band */}
-        <rect x="15" y="38" width="50" height="8" fill={color} opacity="1" />
-        <rect x="15" y="38" width="50" height="8" fill="none" stroke={color} strokeWidth="0.5" opacity="0.6" />
+        <rect x="15" y="38" width="50" height="8" fill="#d4af37" />
+        <rect x="15" y="38" width="50" height="1" fill="#e6c65c" opacity="0.6" />
         {/* Kiswah pattern - diamond shapes on the band */}
-        <polygon points="28,42 32,39 36,42 32,45" fill={color} opacity="0.5" />
-        <polygon points="44,42 48,39 52,42 48,45" fill={color} opacity="0.5" />
-        {/* Door */}
-        <rect x="32" y="48" width="16" height="22" rx="8" fill={color} opacity="0.4" />
-        <rect x="34" y="50" width="12" height="20" rx="6" fill={color} opacity="0.2" />
+        <polygon points="28,42 32,39 36,42 32,45" fill="#e6c65c" opacity="0.7" />
+        <polygon points="44,42 48,39 52,42 48,45" fill="#e6c65c" opacity="0.7" />
+        {/* Door - gold */}
+        <rect x="32" y="48" width="16" height="22" rx="8" fill="#d4af37" opacity="0.8" />
+        <rect x="34" y="50" width="12" height="20" rx="6" fill="#b8960c" opacity="0.5" />
         {/* Top cloth edge */}
-        <path d="M15 20 Q40 15 65 20" stroke={color} strokeWidth="1" fill="none" opacity="0.6" />
+        <path d="M15 20 Q40 15 65 20" stroke="#d4af37" strokeWidth="1" fill="none" opacity="0.6" />
         {/* Hajr Ismail suggestion */}
-        <path d="M65 55 Q75 40 65 30" stroke={color} strokeWidth="1.5" fill="none" opacity="0.4" strokeDasharray="3 2" />
+        <path d="M65 55 Q75 40 65 30" stroke="#888888" strokeWidth="1.5" fill="none" opacity="0.5" strokeDasharray="3 2" />
       </svg>
     );
   }

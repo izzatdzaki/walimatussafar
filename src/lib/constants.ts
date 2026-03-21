@@ -7,27 +7,14 @@ export const EVENT_INFO: EventInfo = {
   date: '2026-04-19T08:00:00+07:00',
   dateHijri: '1 Syawwal 1448 H',
   dateFormatted: 'Minggu, 19 April 2026',
-  time: '08.00 WIB - Selesai',
+  time: '10.00 WITA - Selesai',
   venue: 'Kediaman Keluarga H. Nasir',
-  address: 'Jl. Mawar No. 123, RT 05/RW 02, Kel. Sukamaju, Kec. Cilandak, Jakarta Selatan',
-  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d106.8!3d-6.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTgnMDAuMCJTIDEwNsKwNDgnMDAuMCJF!5e0!3m2!1sid!2sid!4v1234567890',
-  mapLink: 'https://maps.google.com/?q=-6.3,106.8',
+  address: 'Dusun Tebbange desa Borikamase Kec. Maros Baru Kab. Maros, Sulawesi Selatan',
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d119.5278094!3d-5.0095639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbef9175d73fd7d%3A0xf2179478b118d05!2sTebbange%20desa%20borikamase!5e0!3m2!1sid!2sid',
+  mapLink: 'https://www.google.com/maps/dir//Tebbange+desa+borikamase,+XGRG%2B8X5,+Bori+Kamase,+Kec.+Maros+Baru,+Kabupaten+Maros,+Sulawesi+Selatan+90516/@-3.9780717,122.5712095,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dbef9175d73fd7d:0xf2179478b118d05!2m2!1d119.5278094!2d-5.0095639?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D',
 };
 
-export const INITIAL_WISHES: WishItem[] = [
-  {
-    id: '1',
-    name: 'Pak RT Hasan',
-    message: 'Semoga perjalanan haji Bapak dan Ibu diberi kelancaran, kesehatan, dan menjadi haji yang mabrur. Aamiin.',
-    timestamp: Date.now() - 86400000,
-  },
-  {
-    id: '2',
-    name: 'Bu Sari',
-    message: 'Selamat menunaikan ibadah haji. Semoga senantiasa dalam lindungan Allah SWT. Haji Mabrur!',
-    timestamp: Date.now() - 43200000,
-  },
-];
+export const INITIAL_WISHES: WishItem[] = [];
 
 export const BISMILLAH_TEXT = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
 
