@@ -7,11 +7,11 @@ export const EVENT_INFO: EventInfo = {
   date: '2026-04-19T08:00:00+07:00',
   dateHijri: '1 Syawwal 1448 H',
   dateFormatted: 'Minggu, 19 April 2026',
-  time: '10.00 WITA - Selesai',
+  time: '09:00 WITA - Selesai',
   venue: 'Kediaman Keluarga H. Nasir',
   address: 'Dusun Tebbange desa Borikamase Kec. Maros Baru Kab. Maros, Sulawesi Selatan',
   mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d119.5278094!3d-5.0095639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbef9175d73fd7d%3A0xf2179478b118d05!2sTebbange%20desa%20borikamase!5e0!3m2!1sid!2sid',
-  mapLink: 'https://www.google.com/maps/dir//Tebbange+desa+borikamase,+XGRG%2B8X5,+Bori+Kamase,+Kec.+Maros+Baru,+Kabupaten+Maros,+Sulawesi+Selatan+90516/@-3.9780717,122.5712095,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dbef9175d73fd7d:0xf2179478b118d05!2m2!1d119.5278094!2d-5.0095639?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D',
+  mapLink: 'https://www.google.com/maps/search/Masjid%20Baburrahman%20Dusun%20Tebbange/@-5.008613586425781,119.5275650024414,17z?hl=en',
 };
 
 export const INITIAL_WISHES: WishItem[] = [];
