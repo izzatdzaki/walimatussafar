@@ -26,9 +26,6 @@ export default function CountdownTimer() {
           <h2 className="font-heading text-2xl md:text-3xl text-text-dark mb-2">
             Hitung Mundur
           </h2>
-          <p className="text-text-light text-sm mb-8">
-            Menuju hari bahagia
-          </p>
         </ScrollAnimator>
 
         {isExpired ? (
