@@ -30,15 +30,15 @@ export default function RsvpSection() {
 
   if (submitted) {
     return (
-      <section className="py-16 px-6 bg-gradient-navy text-white geometric-overlay">
+      <section className="py-16 px-6 bg-gradient-navy text-text-dark geometric-overlay">
         <div className="relative z-10 max-w-lg mx-auto text-center">
           <ScrollAnimator>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-gold/20">
+            <div className="bg-white rounded-xl p-8 border border-gold/20 shadow-sm">
               <div className="text-4xl mb-4">✦</div>
-              <h3 className="font-heading text-xl text-gold mb-2">
+              <h3 className="font-heading text-xl text-gold-dark mb-2">
                 Jazakumullahu Khairan
               </h3>
-              <p className="text-white/70 text-sm">
+              <p className="text-text-medium text-sm">
                 Konfirmasi kehadiran Anda telah kami terima.
                 {attendance === 'hadir' && ' Kami menantikan kehadiran Anda.'}
                 {attendance === 'tidak_hadir' && ' Semoga lain waktu bisa bertemu.'}
@@ -52,16 +52,16 @@ export default function RsvpSection() {
   }
 
   return (
-    <section className="py-16 px-6 bg-gradient-navy text-white geometric-overlay">
+    <section className="py-16 px-6 bg-gradient-navy text-text-dark geometric-overlay">
       <div className="relative z-10 max-w-lg mx-auto">
         <ScrollAnimator>
           <div className="flex justify-center mb-3">
             <IslamicOrnament variant="lantern" color="var(--gold)" className="w-6 h-12 opacity-50" />
           </div>
-          <h2 className="font-heading text-2xl md:text-3xl text-gold text-center mb-2">
+          <h2 className="font-heading text-2xl md:text-3xl text-gold-dark text-center mb-2">
             Konfirmasi Kehadiran
           </h2>
-          <p className="text-white/60 text-sm text-center mb-8">
+          <p className="text-text-light text-sm text-center mb-8">
             Mohon konfirmasi kehadiran Anda
           </p>
         </ScrollAnimator>
@@ -69,12 +69,12 @@ export default function RsvpSection() {
         <ScrollAnimator delay={200}>
           <form
             onSubmit={handleSubmit}
-            className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-gold/20"
+            className="bg-white rounded-2xl p-6 border border-gold/20 shadow-sm"
           >
             <div className="space-y-5">
               {/* Name */}
               <div>
-                <label htmlFor="rsvp-name" className="block text-sm text-gold mb-1.5">
+                <label htmlFor="rsvp-name" className="block text-sm text-gold-dark mb-1.5">
                   Nama
                 </label>
                 <input
@@ -83,8 +83,8 @@ export default function RsvpSection() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Masukkan nama Anda"
-                  className="w-full px-4 py-2.5 rounded-lg bg-white/10 border border-gold/30
-                             text-white placeholder:text-white/30 focus:outline-none
+                  className="w-full px-4 py-2.5 rounded-lg bg-cream/50 border border-gold/30
+                             text-text-dark placeholder:text-text-light focus:outline-none
                              focus:border-gold focus:ring-1 focus:ring-gold/50 transition-colors"
                   required
                 />
@@ -92,7 +92,7 @@ export default function RsvpSection() {
 
               {/* Attendance */}
               <div>
-                <label className="block text-sm text-gold mb-2">Kehadiran</label>
+                <label className="block text-sm text-gold-dark mb-2">Kehadiran</label>
                 <div className="grid grid-cols-3 gap-2">
                   {attendanceOptions.map((opt) => (
                     <button
@@ -102,8 +102,8 @@ export default function RsvpSection() {
                       className={clsx(
                         'py-2.5 px-3 rounded-lg border text-sm font-medium transition-all duration-200 cursor-pointer',
                         attendance === opt.value
-                          ? 'bg-gold text-navy-dark border-gold'
-                          : 'bg-transparent text-white/70 border-gold/30 hover:border-gold/60'
+                          ? 'bg-gold text-white border-gold'
+                          : 'bg-transparent text-text-medium border-gold/30 hover:border-gold/60'
                       )}
                     >
                       <span className="block text-lg mb-0.5">{opt.icon}</span>
@@ -116,19 +116,19 @@ export default function RsvpSection() {
               {/* Number of guests */}
               {attendance === 'hadir' && (
                 <div className="animate-fade-in">
-                  <label htmlFor="rsvp-guests" className="block text-sm text-gold mb-1.5">
+                  <label htmlFor="rsvp-guests" className="block text-sm text-gold-dark mb-1.5">
                     Jumlah Tamu
                   </label>
                   <select
                     id="rsvp-guests"
                     value={guests}
                     onChange={(e) => setGuests(Number(e.target.value))}
-                    className="w-full px-4 py-2.5 rounded-lg bg-white/10 border border-gold/30
-                               text-white focus:outline-none focus:border-gold focus:ring-1
+                    className="w-full px-4 py-2.5 rounded-lg bg-cream/50 border border-gold/30
+                               text-text-dark focus:outline-none focus:border-gold focus:ring-1
                                focus:ring-gold/50 transition-colors"
                   >
                     {[1, 2, 3, 4, 5].map((n) => (
-                      <option key={n} value={n} className="bg-navy text-white">
+                      <option key={n} value={n} className="bg-white text-text-dark">
                         {n} Orang
                       </option>
                     ))}
@@ -143,8 +143,8 @@ export default function RsvpSection() {
                 className={clsx(
                   'w-full py-2.5 rounded-lg font-heading transition-all duration-300 cursor-pointer',
                   name.trim() && attendance
-                    ? 'bg-gold text-navy-dark hover:bg-gold-light'
-                    : 'bg-gold/30 text-white/30 cursor-not-allowed'
+                    ? 'bg-gold text-white hover:bg-gold-light'
+                    : 'bg-gold/30 text-text-light cursor-not-allowed'
                 )}
               >
                 Kirim Konfirmasi

@@ -12,7 +12,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ guestName }: HeroSectionProps) {
   return (
-    <section className="relative bg-gradient-navy text-white py-20 px-6 overflow-hidden geometric-overlay">
+    <section className="relative bg-gradient-navy text-text-dark py-20 px-6 overflow-hidden geometric-overlay">
       {/* Decorative arch frame (thin gold) */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         <svg
@@ -50,7 +50,7 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
       <div className="relative z-10 max-w-lg mx-auto text-center">
         <ScrollAnimator>
           {/* Bismillah */}
-          <p className="font-arabic text-xl md:text-2xl text-gold mb-6 leading-relaxed">
+          <p className="font-arabic text-xl md:text-2xl text-gold-dark mb-6 leading-relaxed">
             {BISMILLAH_TEXT}
           </p>
         </ScrollAnimator>
@@ -60,7 +60,7 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         </ScrollAnimator>
 
         <ScrollAnimator delay={200}>
-          <p className="text-white/70 text-sm mt-6 mb-3">
+          <p className="text-text-medium text-sm mt-6 mb-3">
             Dengan memohon Rahmat dan Ridho Allah SWT
           </p>
         </ScrollAnimator>
@@ -70,11 +70,11 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
           <div className="my-6">
             {EVENT_INFO.hostNames.map((name, i) => (
               <div key={i}>
-                <h2 className="font-heading text-2xl md:text-3xl text-gold-light">
+                <h2 className="font-heading text-2xl md:text-3xl text-gold-dark">
                   {name}
                 </h2>
                 {i < EVENT_INFO.hostNames.length - 1 && (
-                  <p className="text-white/50 text-sm my-2">&</p>
+                  <p className="text-text-light text-sm my-2">&</p>
                 )}
               </div>
             ))}
@@ -84,7 +84,7 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         <ScrollAnimator delay={400} variant="scale">
           {/* Kaaba SVG centerpiece */}
           <div className="flex justify-center my-6">
-            <IslamicOrnament variant="kaaba" color="white" className="w-20 h-20 md:w-24 md:h-24" />
+            <IslamicOrnament variant="kaaba" color="var(--gold-dark)" className="w-20 h-20 md:w-24 md:h-24" />
           </div>
         </ScrollAnimator>
 
@@ -93,7 +93,7 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
           <h1 className="font-heading text-3xl md:text-5xl animate-shimmer mb-3">
             {EVENT_INFO.eventTitle}
           </h1>
-          <p className="text-gold-light/80 text-base md:text-lg font-heading">
+          <p className="text-gold-dark/80 text-base md:text-lg font-heading">
             {EVENT_INFO.eventSubtitle}
           </p>
         </ScrollAnimator>
@@ -101,13 +101,13 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         <ScrollAnimator delay={600}>
           <IslamicOrnament variant="divider" color="var(--gold)" />
 
-          <p className="text-white/70 text-sm mt-6">
+          <p className="text-text-medium text-sm mt-6">
             Mengundang kehadiran Bapak/Ibu/Saudara/i
           </p>
-          <p className="font-heading text-xl md:text-2xl text-white mt-2">
+          <p className="font-heading text-xl md:text-2xl text-text-dark mt-2">
             {guestName}
           </p>
-          <p className="text-white/60 text-sm mt-2">
+          <p className="text-text-light text-sm mt-2">
             untuk menghadiri acara syukuran kami
           </p>
         </ScrollAnimator>

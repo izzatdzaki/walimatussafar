@@ -22,7 +22,7 @@ export default function CoverOverlay({ guestName, onOpen }: CoverOverlayProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex flex-col items-center justify-center cover-gradient text-white transition-all duration-700 ${
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-center cover-gradient text-text-dark transition-all duration-700 ${
         isClosing ? 'opacity-0 scale-110' : 'opacity-100 scale-100'
       }`}
     >
@@ -76,7 +76,7 @@ export default function CoverOverlay({ guestName, onOpen }: CoverOverlayProps) {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-md animate-fade-in">
         {/* Bismillah */}
-        <p className="font-arabic text-2xl md:text-3xl text-gold mb-6 leading-relaxed">
+        <p className="font-arabic text-2xl md:text-3xl text-gold-dark mb-6 leading-relaxed">
           {BISMILLAH_TEXT}
         </p>
 
@@ -86,13 +86,13 @@ export default function CoverOverlay({ guestName, onOpen }: CoverOverlayProps) {
         <h1 className="font-heading text-2xl md:text-3xl mt-6 mb-2 animate-shimmer tracking-wider">
           Walimatussafar
         </h1>
-        <p className="text-sm md:text-base text-gold-light/80 font-heading mb-8">
+        <p className="text-sm md:text-base text-gold-dark/80 font-heading mb-8">
           Syukuran Keberangkatan Ibadah Haji
         </p>
 
         {/* Guest name */}
-        <p className="text-sm text-white/60 mb-1">Kepada Yth.</p>
-        <p className="font-heading text-2xl md:text-3xl text-white mb-8">
+        <p className="text-sm text-text-medium mb-1">Kepada Yth.</p>
+        <p className="font-heading text-2xl md:text-3xl text-text-dark mb-8">
           {guestName}
         </p>
 

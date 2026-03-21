@@ -88,10 +88,10 @@ export default function WishesSection() {
           <div className="flex justify-center mb-3">
             <IslamicOrnament variant="crescent-star" color="var(--gold)" className="w-8 h-8 opacity-60" />
           </div>
-          <h2 className="font-heading text-2xl md:text-3xl text-navy text-center mb-2">
+          <h2 className="font-heading text-2xl md:text-3xl text-text-dark text-center mb-2">
             Doa & Ucapan
           </h2>
-          <p className="text-navy/60 text-sm text-center mb-8">
+          <p className="text-text-light text-sm text-center mb-8">
             Kirimkan doa terbaik untuk calon jamaah haji
           </p>
         </ScrollAnimator>
@@ -101,7 +101,7 @@ export default function WishesSection() {
           <form onSubmit={handleSubmit} className="card-ornate-islamic p-6 mb-8">
             <div className="space-y-4">
               <div>
-                <label htmlFor="wish-name" className="block text-sm font-medium text-navy/70 mb-1">
+                <label htmlFor="wish-name" className="block text-sm font-medium text-text-medium mb-1">
                   Nama
                 </label>
                 <input
@@ -111,13 +111,13 @@ export default function WishesSection() {
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Masukkan nama Anda"
                   className="w-full px-4 py-2.5 rounded-lg border border-gold/30 bg-cream/50
-                             text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold
+                             text-text-dark placeholder:text-text-light focus:outline-none focus:border-gold
                              focus:ring-1 focus:ring-gold/50 transition-colors"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="wish-message" className="block text-sm font-medium text-navy/70 mb-1">
+                <label htmlFor="wish-message" className="block text-sm font-medium text-text-medium mb-1">
                   Doa & Ucapan
                 </label>
                 <textarea
@@ -127,15 +127,15 @@ export default function WishesSection() {
                   placeholder="Tuliskan doa dan ucapan Anda..."
                   rows={3}
                   className="w-full px-4 py-2.5 rounded-lg border border-gold/30 bg-cream/50
-                             text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold
+                             text-text-dark placeholder:text-text-light focus:outline-none focus:border-gold
                              focus:ring-1 focus:ring-gold/50 transition-colors resize-none"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="w-full py-2.5 bg-navy text-gold font-heading rounded-lg
-                           hover:bg-navy-light transition-colors duration-300 cursor-pointer"
+                className="w-full py-2.5 bg-gold text-white font-heading rounded-lg
+                           hover:bg-gold-dark transition-colors duration-300 cursor-pointer"
               >
                 Kirim Doa
               </button>
@@ -156,16 +156,16 @@ export default function WishesSection() {
               <div className="card-ornate-islamic p-5">
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-navy flex items-center justify-center">
-                      <span className="text-gold text-sm font-heading">
+                    <div className="w-8 h-8 rounded-full bg-gold flex items-center justify-center">
+                      <span className="text-white text-sm font-heading">
                         {wish.name.charAt(0).toUpperCase()}
                       </span>
                     </div>
-                    <span className="font-heading text-navy text-sm">{wish.name}</span>
+                    <span className="font-heading text-text-dark text-sm">{wish.name}</span>
                   </div>
-                  <span className="text-navy/40 text-xs">{formatTime(wish.timestamp)}</span>
+                  <span className="text-text-light text-xs">{formatTime(wish.timestamp)}</span>
                 </div>
-                <p className="text-navy/70 text-sm leading-relaxed pl-10">
+                <p className="text-text-medium text-sm leading-relaxed pl-10">
                   {wish.message}
                 </p>
               </div>

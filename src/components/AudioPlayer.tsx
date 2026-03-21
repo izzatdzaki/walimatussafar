@@ -1,16 +1,21 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useAudioPlayer } from '@/hooks/useAudioPlayer';
 
 export default function AudioPlayer() {
-  const { isPlaying, toggle } = useAudioPlayer();
+  const { isPlaying, toggle, play } = useAudioPlayer();
+
+  useEffect(() => {
+    play();
+  }, [play]);
 
   return (
     <button
       onClick={toggle}
-      className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-navy text-gold
-                 shadow-lg shadow-navy/30 flex items-center justify-center
-                 hover:bg-navy-light transition-all duration-300 cursor-pointer
+      className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-white text-gold-dark
+                 shadow-lg shadow-black/10 flex items-center justify-center
+                 hover:bg-cream transition-all duration-300 cursor-pointer
                  border border-gold/30"
       aria-label={isPlaying ? 'Pause musik' : 'Putar musik'}
       title={isPlaying ? 'Pause musik' : 'Putar musik'}

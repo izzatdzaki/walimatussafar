@@ -8,10 +8,10 @@ export default function GoogleMap() {
     <section className="py-16 px-6 bg-cream">
       <div className="max-w-lg mx-auto">
         <ScrollAnimator>
-          <h2 className="font-heading text-2xl md:text-3xl text-navy text-center mb-2">
+          <h2 className="font-heading text-2xl md:text-3xl text-text-dark text-center mb-2">
             Lokasi Acara
           </h2>
-          <p className="text-navy/60 text-sm text-center mb-8">
+          <p className="text-text-light text-sm text-center mb-8">
             Petunjuk arah menuju lokasi
           </p>
         </ScrollAnimator>
@@ -36,8 +36,8 @@ export default function GoogleMap() {
                 href={EVENT_INFO.mapLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-navy text-gold font-heading
-                           rounded-full hover:bg-navy-light transition-colors duration-300 text-sm"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-white font-heading
+                           rounded-full hover:bg-gold-dark transition-colors duration-300 text-sm"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

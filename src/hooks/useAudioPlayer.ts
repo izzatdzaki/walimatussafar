@@ -35,10 +35,9 @@ export function useAudioPlayer() {
 
   const play = useCallback(() => {
     const audio = audioRef.current;
-    if (!audio || isPlaying) return;
-    audio.play().catch(() => setIsPlaying(false));
-    setIsPlaying(true);
-  }, [isPlaying]);
+    if (!audio) return;
+    audio.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+  }, []);
 
   return { isPlaying, toggle, play };
 }

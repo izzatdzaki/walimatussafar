@@ -23,10 +23,10 @@ export default function CountdownTimer() {
           <div className="flex justify-center mb-4">
             <IslamicOrnament variant="crescent-star" color="var(--gold)" className="w-10 h-10" />
           </div>
-          <h2 className="font-heading text-2xl md:text-3xl text-navy mb-2">
+          <h2 className="font-heading text-2xl md:text-3xl text-text-dark mb-2">
             Hitung Mundur
           </h2>
-          <p className="text-navy/60 text-sm mb-8">
+          <p className="text-text-light text-sm mb-8">
             Menuju hari bahagia
           </p>
         </ScrollAnimator>
@@ -37,7 +37,7 @@ export default function CountdownTimer() {
               <p className="font-heading text-xl text-gold">
                 Acara Telah Berlangsung
               </p>
-              <p className="text-navy/60 text-sm mt-2">
+              <p className="text-text-light text-sm mt-2">
                 Jazakumullahu khairan atas doa dan kehadirannya
               </p>
             </div>
@@ -51,10 +51,10 @@ export default function CountdownTimer() {
                   className="countdown-box p-4 md:p-6 flex flex-col items-center"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
-                  <span className="font-heading text-3xl md:text-5xl text-navy font-bold tabular-nums">
+                  <span className="font-heading text-3xl md:text-5xl text-gold-dark font-bold tabular-nums">
                     {String(item.value).padStart(2, '0')}
                   </span>
-                  <span className="text-xs md:text-sm text-navy/60 mt-1 font-body">
+                  <span className="text-xs md:text-sm text-text-light mt-1 font-body">
                     {item.label}
                   </span>
                 </div>
